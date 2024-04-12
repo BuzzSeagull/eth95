@@ -56,11 +56,11 @@ if (targetPath) {
 
   log.info(`Artifact directory: ${chalk.yellow(artifactPath)}`);
   startServer({
-    port: options.port || 3000,
+    port: options.port || 1234,
     artifactPath,
   });
 } else {
   startServer({
-    port: options.port || 3000,
+    port: options.port || 1234,
   });
 }
