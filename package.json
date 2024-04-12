@@ -13,8 +13,6 @@
     "build": "rm -rf dist && yarn tsc && yarn bundle",
     "tsc": "tsc -p . && tsc -p ./src/app",
     "bundle": "parcel build src/app/index.html -d dist/app --no-source-maps",
-    "test": "jest",
-    "test:ci": "jest --runInBand",
     "prepublish": "yarn build",
     "prepare": "husky install"
   },
@@ -68,8 +66,5 @@
     "ts-node": "^10.9.1",
     "typescript": "^4.8.2",
     "unstated-next": "^1.1.0"
-  },
-  "engines": {
-    "node": "16"
   }
 }
